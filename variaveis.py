@@ -1,0 +1,23 @@
+nome=input("Digite um funcionário: ")
+empresa=input("Digite a instituição: ")
+qtde_funcionarios=int(input("Digite a qtde de funcionários: "))
+carro = input("Digite a marca do seu carro")
+filhos = int(input("Digite o numero de filhos que vd tem:"))
+salario = float(input("Digite quanto vc ganha:"))
+custoFilho = float(salario/filhos)
+mediaMensalidade=float(input("Digite a média da mensalidade: "))
+print(nome + " trabalha na empresa " + empresa)
+print("Possui: ", qtde_funcionarios, " funcionarios.")
+print("A média da mensalidade é de: " + str(mediaMensalidade))
+print("==============Verifique os tipos de dados abaixo:==============")
+print("O tipo de dado da variavel [nome] é: ",type(nome))
+print("O tipo de dado da variavel [empresa] é: ",type(empresa))
+print("O tipo de dado da variavel [qtde_funcionarios] é: ",type(qtde_funcionarios))
+print(nome, "paga uma média de", mediaMensalidade,"e trabalha na", empresa )
+print("O Sr.", nome, "gasta por mes a quantia de", custoFilho, "para cada filho que tem")
+if salario>=1000:
+    print("O Sr. ", nome, " ganha muito bem")
+elif salario <=500:
+    print("O salario dele é pessimo")
+else:
+    print("Seu salário é razoavel")
